@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/darkleon1983/toxin/issues"
   },
-  "homepage": "https://github.com/darkleon1983/toxin#readme"
+  "homepage": "https://github.com/darkleon1983/toxin#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
 }
