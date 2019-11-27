@@ -1,7 +1,88 @@
+@mixin font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 $color-main: white;
 $color-secondary: magenta;
+$menu-text: rgba(31, 32, 65, 0.5);
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $color-main;
-  color: $color-secondary;
+  @include font-montserrat;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  margin-left: 20px;
+}
+
+.menu-buttons {
+  padding: 10px 0;
+  text-align: center;
+  min-width: 87px;
+  min-height: 34px;
+  border: 2px solid #8ba4f9;
+  border-radius: 22px;
+}
+
+.reg {
+  min-width: 196px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border:2px solid #8ba4f9;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  color: $menu-text;
+  &__svg-list {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+    // outline: 2px solid red;
+
+    &-circle {
+      margin-right: 12.5px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: baseline;
+    // outline: 2px solid red;
+    margin-right: 140px;
+    // align-items: flex-end;
+  }
+}
+
+.main-photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: auto;
+  background: url('../img/image3.png') no-repeat 50% 50%;
+  background-size: cover;
+  position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+
+  .main-photo__items-container {
+  
+  &_text {
+    width: 297px;
+    height: 48px;
+    margin-top: 500px;
+    margin-right: 181px;
+    margin-bottom: 18px;
+    }
+  }
 }
