@@ -1,10 +1,13 @@
+@import 'normalize.css';
+
 @mixin font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 
 $color-main: white;
-$color-secondary: magenta;
 $menu-text: rgba(31, 32, 65, 0.5);
+$secondary-text: rgba(31, 32, 65, 0.75);
+$footer-heading-color: #1f2041;
 * {
   box-sizing: border-box;
 }
@@ -15,6 +18,12 @@ body {
 
 .list {
   list-style: none;
+  outline: 1px solid purple;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .list-item {
@@ -80,25 +89,39 @@ body {
   &_text {
     width: 297px;
     height: 48px;
-    margin-top: 500px;
-    margin-right: 181px;
+    margin-top: 700px;
+    margin-right: 81px;
     margin-bottom: 18px;
     }
   }
 }
 
+.footer-nav h2 {
+  color: $footer-heading-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .footer-nav {
+  font-size: 14px;
+  line-height: 17px;
   margin-top: 39px;
+  color: $menu-text;
   display: flex;
 
   &__description {
+    color: $secondary-text;
     margin-left: 140px;
+
     &_logo-container {
       display: flex;
       align-items: center;
       &_text {
         margin-left: 13px;
       }
+
     }
     &_text-container {
       width: 260px;
@@ -106,5 +129,9 @@ body {
       line-height: 24px;
       margin-top: 39px;
     }
+  }
+  &__menu {
+    text-align: left;
+    outline: 2px solid purple;
   }
 }
