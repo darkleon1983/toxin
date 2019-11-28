@@ -8,6 +8,7 @@ $color-main: white;
 $menu-text: rgba(31, 32, 65, 0.5);
 $secondary-text: rgba(31, 32, 65, 0.75);
 $footer-heading-color: #1f2041;
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ body {
 
 .list {
   list-style: none;
-  outline: 1px solid purple;
+  margin-left: 0;
 }
 
 a {
@@ -110,6 +111,7 @@ a {
   margin-top: 39px;
   color: $menu-text;
   display: flex;
+  justify-content: space-between;
 
   &__description {
     color: $secondary-text;
@@ -132,6 +134,5 @@ a {
   }
   &__menu {
     text-align: left;
-    outline: 2px solid purple;
   }
 }
