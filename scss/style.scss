@@ -86,3 +86,25 @@ body {
     }
   }
 }
+
+.footer-nav {
+  margin-top: 39px;
+  display: flex;
+
+  &__description {
+    margin-left: 140px;
+    &_logo-container {
+      display: flex;
+      align-items: center;
+      &_text {
+        margin-left: 13px;
+      }
+    }
+    &_text-container {
+      width: 260px;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 39px;
+    }
+  }
+}

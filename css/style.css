@@ -58,3 +58,19 @@ body {
     margin-top: 500px;
     margin-right: 181px;
     margin-bottom: 18px; }
+
+.footer-nav {
+  margin-top: 39px;
+  display: flex; }
+  .footer-nav__description {
+    margin-left: 140px; }
+    .footer-nav__description_logo-container {
+      display: flex;
+      align-items: center; }
+      .footer-nav__description_logo-container_text {
+        margin-left: 13px; }
+    .footer-nav__description_text-container {
+      width: 260px;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 39px; }
