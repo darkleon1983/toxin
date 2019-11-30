@@ -17,7 +17,10 @@ a {
   margin-left: 20px; }
 
 .menu-buttons {
-  padding: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
   text-align: center;
   min-width: 87px;
   min-height: 34px;
@@ -27,7 +30,11 @@ a {
 .reg {
   min-width: 196px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border: 2px solid #8ba4f9; }
+  border: 2px solid #8ba4f9;
+  color: #fff; }
+
+.main-header {
+  position: relative; }
 
 .main-menu {
   display: flex;
@@ -75,7 +82,7 @@ a {
 .footer-nav {
   font-size: 14px;
   line-height: 17px;
-  margin-top: 39px;
+  margin: 39px 0 140px 0;
   color: rgba(31, 32, 65, 0.5);
   display: flex;
   justify-content: space-between; }
@@ -94,3 +101,66 @@ a {
       margin-top: 39px; }
   .footer-nav__menu {
     text-align: left; }
+  .footer-nav__subscribers {
+    margin-right: 140px; }
+    .footer-nav__subscribers__subscribers_description {
+      width: 260px; }
+  .footer-nav__copyrights {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 140px; }
+    .footer-nav__copyrights_logo {
+      display: flex; }
+      .footer-nav__copyrights_logo-svg {
+        margin-left: 20px; }
+
+input::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25); }
+
+.popupp h2 {
+  margin: 0; }
+
+.popupp {
+  position: absolute;
+  z-index: 2;
+  padding: 20px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  top: 140px;
+  left: 140px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  .popupp__form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .popupp__form-inputs_item {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px; }
+
+.text-input {
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75); }
+
+.input-area {
+  width: 150px; }
+
+.footer-list {
+  padding: 0; }
+
+.guests-container {
+  width: 100%; }
+
+.form-submit {
+  margin-top: 30px; }
